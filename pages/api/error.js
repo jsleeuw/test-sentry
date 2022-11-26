@@ -1,4 +1,4 @@
-export default errorRoute = (req, res) => {
-  // throw new Error("API throw error test")
+export default function handler(req, res) {
+  throw new Error("API throw error test")
   res.status(200).json({ name: "John Doe" })
 }
